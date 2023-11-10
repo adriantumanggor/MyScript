@@ -12,9 +12,9 @@ Selamat datang di repositori **Ular Kadut**! Repositori ini adalah bagian dari p
 
 ## Cara Mulai
 
-Jika Anda ingin mulai belajar Python bersama kadutt, berikut langkah-langkahnya:
+Jika Anda ingin bersama kadutt, berikut langkah-langkahnya:
 
 1. Clone repositori ini ke komputer Anda dengan menjalankan perintah:
 
    ```bash
-   git clone https://github.com/namarepomu/UlarKadut.git
+   git clone https://github.com/adriantumanggor/UlerKadut
