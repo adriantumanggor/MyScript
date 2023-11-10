@@ -1,6 +1,6 @@
 # Ular Kadut - Proyek Belajar-Belajaran
 
-Selamat datang di repositori **Ular Kadut**! Repositori ini adalah bagian dari proyek belajar Python yang bertujuan untuk membantu saya memahami dan menguasai bahasa pemrograman Python.
+Selamat datang di repositori **Ular Kadut**! Repositori ini adalah bagian dari proyek belajar Python yang bertujuan untuk membantu saya memahami dan menguasai bahasa pemrograman Python.(niatnya)
 
 ## Tentang Ular Kadut
 
