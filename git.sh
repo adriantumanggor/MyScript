@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setel pesan commit
-COMMIT_MESSAGE="..."
+COMMIT_MESSAGE="${1:-Pesan commit default}"
 
 # Tambahkan semua perubahan ke staging area
 git add .
