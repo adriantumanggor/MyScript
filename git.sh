@@ -5,6 +5,7 @@ COMMIT_MESSAGE="..."
 
 # Tambahkan semua perubahan ke staging area
 git add .
+git add --all
 
 # Lakukan commit dengan pesan yang diberikan
 git commit -m "$COMMIT_MESSAGE"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-download_folder="/home/tumanggor675/Downloads"
-target_folder="/home/tumanggor675/Downloads/pdf"  
+download_folder="/home/username/Downloads"
+target_folder="/home/username/Downloads/pdf"  
 
 counter=1
 
