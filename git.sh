@@ -13,7 +13,5 @@ git commit -m "$COMMIT_MESSAGE"
 # Push perubahan ke GitHub
 git push 
 
-# Jika Anda menggunakan otentikasi melalui token, gunakan baris berikut
-# git push "$REPO_URL" --set-upstream origin master -u "$USERNAME:$TOKEN"
-
+# Pesan berhasil
 echo "Perubahan berhasil di-commit dan di-push ke GitHub."
