@@ -27,11 +27,6 @@ To make your Bash script globally accessible, you can move it to the `/usr/local
     script.sh
     ```
 
-   If you want to run it by providing a commit message as an argument:
-
-    ```bash
-    script.sh "This is my commit message"
-    ```
 
 With these steps, you've made your Bash script globally accessible by moving it to the `/usr/local/bin` directory, and you can run it from any location without specifying the full path.
 
