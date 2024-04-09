@@ -26,6 +26,18 @@ To make your Bash script globally accessible, you can move it to the `/usr/local
     ```bash
     script.sh
     ```
+4. Optional
+   ```bash
+   cd /usr/local/bin
+   ```
+   
+   ```bash
+   ln -s script.sh myscript
+   ```
+   
+   ```bash
+   myscript
+   ```
 
 
 With these steps, you've made your Bash script globally accessible by moving it to the `/usr/local/bin` directory, and you can run it from any location without specifying the full path.
