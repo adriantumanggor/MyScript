@@ -1,17 +1,29 @@
 #!/bin/bash
 
-# Setel pesan commit
-COMMIT_MESSAGE="${1:-Pesan commit default}"
+# Set the commit message
+COMMIT_MESSAGE="${1:-Default}"
 
-# Tambahkan semua perubahan ke staging area
-git add .
+# Add all changes to the staging area
 git add --all
 
-# Lakukan commit dengan pesan yang diberikan
+# Commit with the provided message
 git commit -m "$COMMIT_MESSAGE"
 
-# Push perubahan ke GitHub
-git push 
+# Attempt to push changes to GitHub
+git push
 
-# Pesan berhasil
-echo "Perubahan berhasil di-commit dan di-push ke GitHub."
+if [ $? -ne 0 ]; then
+    # If push fails because there is no upstream branch, set the upstream branch
+    echo "Push failed. Attempting to set upstream branch..."
+    current_branch=$(git branch --show-current)
+    git push --set-upstream origin "$current_branch"
+    
+    # Check push status again
+    if [ $? -eq 0 ]; then
+        echo "Changes successfully committed and pushed to GitHub after setting upstream branch."
+    else
+        echo "Failed to set upstream branch and push changes."
+    fi
+else
+    echo "Changes successfully committed and pushed to GitHub."
+fi
