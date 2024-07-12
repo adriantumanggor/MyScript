@@ -1,4 +1,4 @@
-# Automated Scripts Repository with GPT
+# Automated Scripts Repository with COPILOT
 
 This nguwawor repository serves as a personal storage space for automation scripts developed assisted by GPT (Generative Pre-trained Transformer).These scripts are designed to facilitate everyday tasks in software development and automate other processes.
 
