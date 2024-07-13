@@ -18,3 +18,4 @@ for file_path in "$download_folder"/*.pdf ; do
     mv "$file_path" "$target_folder/"
     echo "File $(basename "$file_path") berhasil dipindahkan ke $target_folder/"
 done
+

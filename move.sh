@@ -18,3 +18,4 @@ for file_path in "$download_folder"/*.jpg "$download_folder"/*.jpeg; do
     mv "$file_path" "$target_folder/"
     echo "File $(basename "$file_path") berhasil dipindahkan ke $target_folder/"
 done
+
