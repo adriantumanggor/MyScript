@@ -66,9 +66,6 @@ done
 # Ambil nama file eksekusi dari file pertama (tanpa ekstensi)
 file_name=$(basename "$1" .c)
 
-# Tambahkan library tambahan
-# additional_libs=$(add_libraries)
-
 # Kompilasi file-file C dengan library tambahan
 gcc -o "$file_name" $source_files $additional_libs
 
