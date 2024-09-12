@@ -31,7 +31,7 @@ while getopts "af:m:b:h" opt; do
         *) usage ;;
     esac
 done
-
+        
 # Use default message if no commit message is provided
 if [ -z "$COMMIT_MESSAGE" ]; then
     COMMIT_MESSAGE="$DEFAULT_MESSAGE"
