@@ -11,11 +11,10 @@ for file_name in "$@"; do
     # Membuat file menggunakan perintah touch
     touch $file_name
 
-    # echo "Open vscode?:(y/n)"
-    read -p "Enter your choice (y or n): " ACTION_CHOICE
+    read -p "Enter to code: " ACTION_CHOICE
     
     # Check the user's choice
-    if [ "$ACTION_CHOICE" = "y" ]; then
+    if [ "$ACTION_CHOICE" = "" ]; then
         # Membuka file menggunakan Visual Studio Code
         code $file_name
     fi
