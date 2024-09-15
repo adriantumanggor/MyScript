@@ -1,4 +1,4 @@
-# Automated Scripts Repository 
+# Automated Scripts Repository
 
 This repository serves as a personal storage space for automation scripts developed with the assistance of GPT (Generative Pre-trained Transformer) and COPILOT. These scripts are designed to facilitate everyday tasks in software development and automate other processes.
 
