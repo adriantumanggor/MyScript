@@ -117,4 +117,4 @@ fi
 gum spin --spinner line --title "Melakukan commit..." -- git commit -m "$FULL_MESSAGE"
 gum spin --spinner line --title "Pushing ke origin/$BRANCH..." -- git push origin "$BRANCH"
 
-gum style --bold --foreground "green" "✅ Proses Selesai! Perubahan Anda telah di-push."
+gum style --bold --foreground "green" "✅ Proses Selesai! Perubahan Anda telah di-push ke branch $BRANCH."
