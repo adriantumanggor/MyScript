@@ -98,22 +98,8 @@ COMMIT_SUBJECT=$(gum input --placeholder "Tulis subjek yang singkat dan jelas")
 if [ -z "$COMMIT_SUBJECT" ]; then echo "Subjek tidak boleh kosong. Dibatalkan."; exit 1; fi
 show_preview "$COMMIT_TYPE" "$COMMIT_SCOPE" "$COMMIT_SUBJECT"
 
-# --- Menulis Body Commit (Opsional) ---
-if gum confirm "Apakah ingin menambahkan deskripsi/body yang lebih panjang?"; then
-    gum log --structured --level info "Tulis body commit (Ctrl+D untuk selesai)..."
-    COMMIT_BODY=$(gum write --placeholder "Tulis deskripsi yang lebih panjang...")
-fi
-
 # --- Merakit Pesan Final ---
-COMMIT_HEADER="$COMMIT_TYPE"
-if [ -n "$COMMIT_SCOPE" ]; then
-    COMMIT_HEADER="$COMMIT_HEADER($COMMIT_SCOPE)"
-fi
-FULL_MESSAGE="$COMMIT_HEADER: $COMMIT_SUBJECT"
-
-if [ -n "$COMMIT_BODY" ]; then
-    FULL_MESSAGE="$FULL_MESSAGE"$'\n\n'"$COMMIT_BODY"
-fi
+FULL_MESSAGE="$COMMIT_TYPE($COMMIT_SCOPE): $COMMIT_SUBJECT"
 
 # --- Langkah 3: Konfirmasi dan Push ---
 style_header "Langkah 3: Konfirmasi & Push"
