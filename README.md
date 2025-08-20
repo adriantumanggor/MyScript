@@ -1,6 +1,6 @@
 # Automated Scripts Repository
 
-This repository serves as a personal storage space for automation scripts developed with the assistance of GPT (Generative Pre-trained Transformer) and COPILOT. These scripts are designed to facilitate everyday tasks in software development and automate other processes.
+This repository serves as a personal storage space for automation scripts developed with the assistance of GPT and COPILOT. These scripts are designed to facilitate everyday tasks in software development and automate other processes.
 
 ---
 
@@ -152,10 +152,10 @@ To automate a script execution at a specific time, set up a cron job. For exampl
 2. **Add the following line to schedule the script:**
 
     ```bash
-    0 0 * * * /path/to/organize_downloads.sh
+    0 0 * * * /path/to/downloads_org.sh
     ```
 
-   Replace `/path/to/organize_downloads.sh` with the full path to your script.
+   Replace `/path/to/downloads_org.sh` with the full path to your script.
 
 3. **Save and exit the editor.**
 
