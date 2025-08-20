@@ -14,7 +14,7 @@ SCOPE_OPTIONS=("api" "ui" "db" "auth" "ci" "docs" "[ ketik manual ]")
 
 # --- Fungsi Bantuan ---
 style_header() {
-    gum style --border normal --padding "1 2" --border-foreground 212 "$1"
+    gum style --border normal --padding "1" --border-foreground 212 "$1"
 }
 
 # Fungsi untuk menampilkan pratinjau pesan commit secara bertahap
